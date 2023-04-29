@@ -3,18 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DuesClerk</title>
-    <style>
-        th {
-          text-align: left;
-        }
-        table, th, td {
-          border-collapse: collapse;
-          padding: 10px;
-        }
-        td {
-          min-width: 150px;
-        }
-  </style>
+    <style></style>
     <script></script>
 </head>
 
@@ -36,7 +25,7 @@
 ### 2. DATABASE
 
 <table>
-  <th colspan="10" style="text-align: start"><strong>DATABASE INFORMATION</strong></th>
+  <th colspan="10" align="left"><strong>DATABASE INFORMATION</strong></th>
   <tr>
     <td> <b>DB</b> ( <i>Database</i> ) </td>
     <td> PostgreSQL </td>
@@ -60,70 +49,16 @@
 
 <br>
 
-### 3. TOOLS / MIDDLEWARE
+### 3. Tools
 
 <table>
-  <th colspan="10" style="text-align: start;">Other tools used</th>
+  <th colspan="2">Other tools used</th>
   <tr>
-    <th>PURPOSE</th>
-    <th>TOOL NAME</th>
-    <th>SOURCE</th>
+    <td>Documentation</td>
+    <td>Swagger</td>
   </tr>
-
-  <tr><td></td></tr>
-  <tr>
-    <td> Documentation </td>
-    <th> Swagger </th>
-    <td>
-        <a href="https://swagger.io/">swagger.io</a>
-    </td>
-  </tr>
-
-  <tr><td></td></tr>
-  <tr>
-    <td> Logging </td>
-    <th> SL4J </th>
-    <td>
-        <a href="https://www.slf4j.org/">Simple Logging Facade for Java (SLF4J)</a>
-    </td>
-  </tr>
-  <tr>
-    <td></td>
-    <th> Apache Tomcat </th>
-    <td>
-        <a href="https://tomcat.apache.org/">Apache Tomcat®</a>
-    </td>
-  </tr>
-
-  <tr><td></td></tr>
-  <tr>
-    <td> Annotation Processors </td>
-    <th> Lombok </th>
-    <td>
-        <a href="https://projectlombok.org/">Project Lombok</a>
-    </td>
-  </tr>
-
-<tr><td></td></tr>
-  <tr>
-    <td> Metrics </td>
-    <th> Micrometer telemetry </th>
-    <td>
-        <a href="https://newrelic.com/instant-observability/micrometer/">Micrometer</a>
-    </td>
-  </tr>
-
 </table>
 
-<br>
-
-### 4. CODE STYLE
-
-| Language | CodeStyle Source                                                              |
-|----------|-------------------------------------------------------------------------------|
-| Java     | [Java Style Guide](https://google.github.io/styleguide/javaguide.html)        |
-| HTML/CSS | [HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html) |
-|          |                                                                               |
 
 </body>
 </html>
