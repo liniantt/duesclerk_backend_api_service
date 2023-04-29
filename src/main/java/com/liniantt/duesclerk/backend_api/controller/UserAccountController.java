@@ -1,5 +1,5 @@
 /**
- * @apiNoteUserAccountController class
+ * @apiNote UserAccountController class
  * @since 1.0.0
  */
 

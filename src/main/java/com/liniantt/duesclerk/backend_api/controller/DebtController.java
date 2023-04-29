@@ -1,5 +1,5 @@
 /**
- * @apiNoteDebtController class
+ * @apiNote DebtController class
  * @since 1.0.0
  */
 

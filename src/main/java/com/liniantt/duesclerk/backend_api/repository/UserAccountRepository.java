@@ -1,5 +1,6 @@
 /**
- * @apiNote UserAccountRepository repository class
+ * @apiNote UserAccountRepository class
+ * @see com.liniantt.duesclerk.backend_api.entity - Entity class
  * @since 1.0.0
  */
 
