@@ -1,5 +1,5 @@
 /**
- * @apiNoteReportController class
+ * @apiNote ReportController class
  * @since 1.0.0
  */
 
