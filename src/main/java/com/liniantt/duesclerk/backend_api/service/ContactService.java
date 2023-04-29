@@ -1,14 +1,12 @@
-/**
- * @apiNote ContactService class
- * @see com.liniantt.duesclerk.backend_api.service_impl.ContactServiceImpl - Interface class implementation
- * @since 1.0.0
- */
-
 package com.liniantt.duesclerk.backend_api.service;
 
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+@Slf4j
+@RequiredArgsConstructor
 @Service
-public interface ContactService {
+public class ContactService {
 
 }
