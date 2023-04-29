@@ -1,14 +1,12 @@
-/**
- * @apiNote UserAccountService class
- * @see com.liniantt.duesclerk.backend_api.service_impl.UserAccountServiceImpl - Interface class Implementation
- * @since 1.0.0
- */
-
 package com.liniantt.duesclerk.backend_api.service;
 
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+@Slf4j
+@RequiredArgsConstructor
 @Service
-public interface UserAccountService {
+public class UserAccountService {
 
 }
