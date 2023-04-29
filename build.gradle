@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.liniantt.duesclerk'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = '20'
 
 configurations {
 	compileOnly {
@@ -42,7 +42,6 @@ dependencies {
 	implementation 'org.springframework.session:spring-session-core'
 	implementation 'org.springframework.shell:spring-shell-starter'
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
-	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0' // Swagger dependency
 
 	// CompileOnly
 	compileOnly 'org.projectlombok:lombok'
@@ -54,23 +53,16 @@ dependencies {
 	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'io.micrometer:micrometer-registry-new-relic'
 	runtimeOnly 'org.postgresql:postgresql'
-	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
 
 	// AnnotationProcessor
 	annotationProcessor 'org.projectlombok:lombok'
 
 	// TestImplementation
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.security:spring-security-test'
 	testImplementation 'io.projectreactor:reactor-test'
 	testImplementation 'org.springframework.batch:spring-batch-test'
 	testImplementation 'org.springframework.graphql:spring-graphql-test'
-	testImplementation 'org.mockito:mockito-junit-jupiter:5.3.1'
-	testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.3'
-	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.3'
-	testImplementation 'com.h2database:h2:2.1.214'
-	testImplementation 'org.assertj:assertj-core:3.24.2'
-
+	testImplementation 'org.springframework.security:spring-security-test'
 }
 
 dependencyManagement {
