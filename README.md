@@ -25,7 +25,7 @@
 ### 2. DATABASE
 
 <table>
-  <th colspan="10" align="left"><strong>DATABASE INFORMATION</strong></th>
+  <th colspan="10" style="text-align: start"><strong>DATABASE INFORMATION</strong></th>
   <tr>
     <td> <b>DB</b> ( <i>Database</i> ) </td>
     <td> PostgreSQL </td>
@@ -52,7 +52,7 @@
 ### 3. Tools
 
 <table>
-  <th colspan="2">Other tools used</th>
+  <th colspan="2" style="text-align: start">Other tools used</th>
   <tr>
     <td>Documentation</td>
     <td>Swagger</td>
