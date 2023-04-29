@@ -1,7 +1,7 @@
 /**
  * @apiNote ContactServiceImpl class
  * @see com.liniantt.duesclerk.backend_api.service.ContactService - Interface class
- * @since April 2023
+ * @since 1.0.0
  */
 
 package com.liniantt.duesclerk.backend_api.service_impl;
