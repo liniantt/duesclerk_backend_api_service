@@ -1,7 +1,5 @@
 /**
- * DebtService class
- *
- * @apiNote Debt service class
+ * @apiNote DebtService class
  * @see com.liniantt.duesclerk.backend_api.service_impl.DebtServiceImpl - Interface class implementation
  * @since April 2023
  */

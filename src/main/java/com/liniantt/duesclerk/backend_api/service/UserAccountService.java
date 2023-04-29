@@ -1,7 +1,5 @@
 /**
- * UserAccountService class
- *
- * @apiNote UserAccount service class
+ * @apiNote UserAccountService class
  * @see com.liniantt.duesclerk.backend_api.service_impl.UserAccountServiceImpl - Interface class Implementation
  * @since April 2023
  */
