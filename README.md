@@ -107,7 +107,7 @@
 <tr><td></td></tr>
   <tr>
     <td> Metrics </td>
-    <th> NewRelic - Micrometer </th>
+    <th> Micrometer telemetry </th>
     <td>
         <a href="https://newrelic.com/instant-observability/micrometer/">Micrometer</a>
     </td>
