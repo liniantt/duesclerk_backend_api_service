@@ -42,6 +42,7 @@ dependencies {
 	implementation 'org.springframework.session:spring-session-core'
 	implementation 'org.springframework.shell:spring-shell-starter'
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.1.0' // Swagger dependency
 
 	// CompileOnly
 	compileOnly 'org.projectlombok:lombok'
