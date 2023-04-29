@@ -1,7 +1,5 @@
 /**
- * ApiController class
- *
- * @apiNote API controller class
+ * @apiNote ApiController class
  * @since April 2023
  */
 

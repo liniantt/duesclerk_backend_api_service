@@ -1,7 +1,5 @@
 /**
- * ContactController class
- *
- * @apiNote Contact controller class
+ * @apiNote ContactController class
  * @since April 2023
  */
 

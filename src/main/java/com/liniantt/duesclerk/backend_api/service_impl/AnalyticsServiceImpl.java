@@ -1,3 +1,9 @@
+/**
+ * @apiNote AnalyticsServiceImpl class
+ * @see com.liniantt.duesclerk.backend_api.service.AnalyticsService - Interface class
+ * @since April 2023
+ */
+
 package com.liniantt.duesclerk.backend_api.service_impl;
 
 import com.liniantt.duesclerk.backend_api.service.AnalyticsService;

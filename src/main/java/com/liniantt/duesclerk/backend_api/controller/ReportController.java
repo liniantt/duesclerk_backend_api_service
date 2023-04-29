@@ -1,7 +1,5 @@
 /**
- * ReportController class
- *
- * @apiNote Report controller class
+ * @apiNoteReportController class
  * @since April 2023
  */
 

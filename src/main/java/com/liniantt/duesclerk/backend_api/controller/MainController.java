@@ -1,7 +1,5 @@
 /**
- * MainController class
- *
- * @apiNote Main controller
+ * @apiNoteMainController class
  * @since April 2023
  */
 

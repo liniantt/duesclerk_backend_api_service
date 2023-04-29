@@ -1,7 +1,5 @@
 /**
- * UserAccountController class
- *
- * @apiNote User account controller class
+ * @apiNoteUserAccountController class
  * @since April 2023
  */
 

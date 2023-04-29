@@ -1,7 +1,5 @@
 /**
- * DebtController class
- *
- * @apiNote Debt controller class
+ * @apiNoteDebtController class
  * @since April 2023
  */
 

@@ -1,7 +1,5 @@
 /**
- * AnalyticsController class
- *
- * @apiNote Analytics controller class
+ * @apiNote AnalyticsController class
  * @since April 2023
  */
 
