@@ -12,10 +12,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @OpenAPIDefinition(
 		info = @Info(
-				title = "",
+				title = "DuesClerk",
 				description = "DuesClerk Web and backend API service",
 				version = "1.0.0",
-				termsOfService = "",
+				termsOfService = "Terms of service will be updated soon.",
 				contact = @Contact(
 						name = "DAVID KARIUKI",
 						email = "dkaris.k@gmail.com"
