@@ -1,4 +1,4 @@
-package com.liniantt.duesclerk.backend_api;
+package com.liniantt.duesclerk.backend_api.scheduling;
 
 import com.liniantt.duesclerk.backend_api.configs.SchedulingConfiguration;
 import org.junit.jupiter.api.Test;

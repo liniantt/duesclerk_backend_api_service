@@ -1,4 +1,4 @@
-package com.liniantt.duesclerk.backend_api;
+package com.liniantt.duesclerk.backend_api.import_;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
