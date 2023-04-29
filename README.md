@@ -65,9 +65,9 @@
 <table>
   <th colspan="10" style="text-align: start;">Other tools used</th>
   <tr>
-    <th>Purpose</th>
-    <th>Tool Name</th>
-    <th>Source</th>
+    <th>PURPOSE</th>
+    <th>TOOL NAME</th>
+    <th>SOURCE</th>
   </tr>
 
   <tr><td></td></tr>
@@ -103,6 +103,16 @@
         <a href="https://projectlombok.org/">Project Lombok</a>
     </td>
   </tr>
+
+<tr><td></td></tr>
+  <tr>
+    <td> Metrics </td>
+    <th> NewRelic - Micrometer </th>
+    <td>
+        <a href="https://newrelic.com/instant-observability/micrometer/">Micrometer</a>
+    </td>
+  </tr>
+
 </table>
 
 <br>
