@@ -111,7 +111,7 @@
     </td>
   </tr>
 
-<tr><td></td></tr>
+  <tr><td></td></tr>
   <tr>
     <td> 4. Metrics </td>
     <th> Micrometer telemetry </th>
@@ -120,7 +120,7 @@
     </td>
   </tr>
 
-<tr><td></td></tr>
+  <tr><td></td></tr>
   <tr>
     <td> 5. Unit and Integration Testing </td>
     <th> JUnit5 </th>
@@ -128,20 +128,29 @@
         <a href="https://junit.org/junit5/">JUnit 5</a>
     </td>
   </tr>
-<tr>
+  <tr>
     <td></td>
     <th> Mockito </th>
     <td>
         <a href="https://site.mockito.org/">Tasty Mockito Framework</a>
     </td>
   </tr>
-<tr>
+  <tr>
+    <td></td>
+    <th> AssertJ </th>
+    <td>
+        <a href="http://joel-costigliola.github.io/assertj/">AssertJ
+Fluent assertions for java</a>
+    </td>
+  </tr>
+  <tr>
     <td></td>
     <th> H2 (Embedded database) </th>
     <td>
         <a href="https://www.h2database.com/html/main.html">H2 Database Engine</a>
     </td>
   </tr>
+  <tr><td></td></tr>
 </table>
 
 <br>
