@@ -1,14 +1,12 @@
-/**
- * @apiNote DebtService class
- * @see com.liniantt.duesclerk.backend_api.service_impl.DebtServiceImpl - Interface class implementation
- * @since 1.0.0
- */
-
 package com.liniantt.duesclerk.backend_api.service;
 
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+@Slf4j
+@RequiredArgsConstructor
 @Service
-public interface DebtService {
+public class DebtService {
 
 }
