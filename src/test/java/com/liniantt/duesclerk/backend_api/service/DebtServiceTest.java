@@ -1,6 +1,8 @@
 /**
  * @apiNote DebtServiceTest class
  * @author David Kariuki
+ * @version 1.0.0
+ * @created 29/04/2023
  * @see com.liniantt.duesclerk.backend_api.service.DebtService - Service class for testing
  * @since 1.0.0
  */
