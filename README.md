@@ -2,20 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DuesClerk</title>
-    <style>
-        th {
-          text-align: left;
-        }
-        table, th, td {
-          border-collapse: collapse;
-          padding: 10px;
-        }
-        td {
-          min-width: 150px;
-        }
-  </style>
-    <script></script>
 </head>
 
 <body>
