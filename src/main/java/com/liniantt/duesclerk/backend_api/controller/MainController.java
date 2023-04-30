@@ -6,6 +6,7 @@
 package com.liniantt.duesclerk.backend_api.controller;
 
 import org.springframework.http.MediaType;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,7 +19,7 @@ public class MainController {
       method = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.PATCH,
           RequestMethod.HEAD, RequestMethod.DELETE, RequestMethod.OPTIONS, RequestMethod.TRACE},
       produces = MediaType.TEXT_HTML_VALUE)
-  public String index() {
+  public String index(Model model) {
     return "index";
   }
 }
