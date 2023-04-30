@@ -1,9 +1,3 @@
-/**
- * @apiNote DebtServiceImpl class
- * @see com.liniantt.duesclerk.backend_api.service.DebtService - Interface class
- * @since 1.0.0
- */
-
 package com.liniantt.duesclerk.backend_api.service_impl;
 
 import com.liniantt.duesclerk.backend_api.service.UserAccountService;
