@@ -1,3 +1,10 @@
+/**
+ * @apiNote UserAccountServiceTest class
+ * @author David Kariuki
+ * @see com.liniantt.duesclerk.backend_api.service.UserAccountService - Service class for testing
+ * @since 1.0.0
+ */
+
 package com.liniantt.duesclerk.backend_api.service;
 
 import org.junit.jupiter.api.extension.ExtendWith;

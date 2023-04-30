@@ -1,3 +1,10 @@
+/**
+ * @apiNote UserAccountControllerTest class
+ * @author David Kariuki
+ * @see com.liniantt.duesclerk.backend_api.controller.UserAccountController - Controller class for testing
+ * @since 1.0.0
+ */
+
 package com.liniantt.duesclerk.backend_api.controller;
 
 import org.junit.jupiter.api.extension.ExtendWith;
