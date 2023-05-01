@@ -25,7 +25,7 @@ import org.springframework.test.web.servlet.MockMvc;
 @AutoConfigureMockMvc
 @AutoConfigureWebTestClient
 @ExtendWith(SpringExtension.class)
-public class UserAccountControllerTest {
+public class AuthUserAccountControllerTest {
 
 
   @Autowired
