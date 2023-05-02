@@ -2,7 +2,7 @@
  * @author David Kariuki
  * @version 1.0.0
  * @apiNote UserRoleEnumConverter class
- * @created 01/05/2023 - 7:30 AM UTC-4
+ * @created 01/05/2023
  * @see com.liniantt.duesclerk.backend_api.domain.enum_.UserRole
  * @since 1.0.0
  */

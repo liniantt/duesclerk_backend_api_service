@@ -2,7 +2,7 @@
  * @author David Kariuki
  * @version 1.0.0
  * @apiNote AuthUser class
- * @created 01/05/2023 - 5:35 AM UTC-4
+ * @created 01/05/2023
  * @see
  * @since 1.0.0
  */
