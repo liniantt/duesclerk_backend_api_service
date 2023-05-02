@@ -2,7 +2,7 @@
  * @author David Kariuki
  * @version 1.0.0
  * @apiNote GlobalControllerExceptionHandler class
- * @created 01/05/2023 - 2:27 PM UTC-4
+ * @created 01/05/2023
  * @since 1.0.0
  */
 

@@ -2,7 +2,7 @@
  * @author David Kariuki
  * @version 1.0.0
  * @apiNote UserAuthenticationRepository interface class
- * @created 01/05/2023 - 7:06 AM UTC-4
+ * @created 01/05/2023
  * @see com.liniantt.duesclerk.backend_api.security.entity.AuthUser
  * @since 1.0.0
  */

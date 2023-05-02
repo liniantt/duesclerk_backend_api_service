@@ -2,7 +2,7 @@
  * @author David Kariuki
  * @version 1.0.0
  * @apiNote JwtService class
- * @created 01/05/2023 - 7:18 AM UTC-4
+ * @created 01/05/2023
  * @see com.liniantt.duesclerk.backend_api.security.authentication_filter.JwtAuthenticationFilter
  * @since 1.0.0
  */

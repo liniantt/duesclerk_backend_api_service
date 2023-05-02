@@ -2,7 +2,7 @@
  * @author David Kariuki
  * @version 1.0.0
  * @apiNote AuthRegistrationRequest input DTO class
- * @created 01/05/2023 - 9:28 AM UTC-4
+ * @created 01/05/2023
  * @since 1.0.0
  */
 

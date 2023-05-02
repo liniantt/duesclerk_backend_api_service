@@ -2,7 +2,7 @@
  * @author David Kariuki
  * @version 1.0.0
  * @apiNote SecurityKeysConfiguration class
- * @created 01/05/2023 - 7:57 AM UTC-4
+ * @created 01/05/2023
  * @since 1.0.0
  */
 
