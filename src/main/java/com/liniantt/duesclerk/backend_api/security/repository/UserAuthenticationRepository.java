@@ -6,15 +6,13 @@
  * @see com.liniantt.duesclerk.backend_api.security.entity.AuthUser
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.security.repository;
 
 import com.liniantt.duesclerk.backend_api.security.entity.AuthUser;
+import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Repository;
-
-import java.util.Optional;
 
 @Repository
 public interface UserAuthenticationRepository extends JpaRepository<AuthUser, Integer> {

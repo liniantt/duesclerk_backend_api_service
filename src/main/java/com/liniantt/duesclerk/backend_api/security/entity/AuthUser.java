@@ -6,19 +6,17 @@
  * @see
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.security.entity;
 
 import com.liniantt.duesclerk.backend_api.domain.enum_.UserRole;
 import jakarta.persistence.*;
+import java.time.LocalDateTime;
+import java.util.Collection;
+import java.util.List;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-
-import java.time.LocalDateTime;
-import java.util.Collection;
-import java.util.List;
 
 @Getter
 @Setter
@@ -31,7 +29,8 @@ import java.util.List;
 public class AuthUser implements UserDetails {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO) // Auto for hibernate to best select based on DB mapping
+  @GeneratedValue(
+      strategy = GenerationType.AUTO) // Auto for hibernate to best select based on DB mapping
   @Column(name = "id")
   private Integer id;
 
@@ -48,7 +47,6 @@ public class AuthUser implements UserDetails {
   @Column(name = "timestamp_created")
   @Builder.Default
   private LocalDateTime timestampCreated = LocalDateTime.now();
-
 
   /**
    * Method to get authorities

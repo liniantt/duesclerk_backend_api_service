@@ -10,5 +10,4 @@ import org.springframework.scheduling.annotation.EnableScheduling;
     name = "com.liniantt.duesclerk.backend_api.scheduling.enabled",
     havingValue = "true",
     matchIfMissing = true)
-public class SchedulingConfiguration {
-}
+public class SchedulingConfiguration {}

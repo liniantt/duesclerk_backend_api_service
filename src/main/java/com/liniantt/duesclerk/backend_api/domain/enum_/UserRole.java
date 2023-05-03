@@ -6,14 +6,12 @@
  * @see
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.domain.enum_;
 
 import lombok.Getter;
 
 @Getter
 public enum UserRole {
-
   ORDINARY_USER("USER"), // Ordinary user
   ADMINISTRATOR("ADMIN"); // Administrator
 
@@ -33,8 +31,7 @@ public enum UserRole {
     return switch (user) {
       case "USER" -> UserRole.ORDINARY_USER;
       case "ADMIN" -> UserRole.ADMINISTRATOR;
-      default -> throw new IllegalArgumentException(
-          "Invalid user role : " + user + "!");
+      default -> throw new IllegalArgumentException("Invalid user role : " + user + "!");
     };
   }
 }

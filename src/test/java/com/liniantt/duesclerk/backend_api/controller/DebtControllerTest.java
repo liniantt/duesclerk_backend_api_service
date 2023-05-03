@@ -6,7 +6,6 @@
  * @see com.liniantt.duesclerk.backend_api.controller.DebtController - Controller class for testing
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.controller;
 
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -27,6 +26,5 @@ import org.springframework.test.web.servlet.MockMvc;
 @ExtendWith(SpringExtension.class)
 public class DebtControllerTest {
 
-  @Autowired
-  private MockMvc mockMvc;
+  @Autowired private MockMvc mockMvc;
 }

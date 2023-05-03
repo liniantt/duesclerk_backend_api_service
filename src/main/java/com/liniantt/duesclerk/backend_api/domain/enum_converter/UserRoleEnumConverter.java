@@ -6,7 +6,6 @@
  * @see com.liniantt.duesclerk.backend_api.domain.enum_.UserRole
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.domain.enum_converter;
 
 import com.liniantt.duesclerk.backend_api.domain.enum_.UserRole;

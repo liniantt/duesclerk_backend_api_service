@@ -5,7 +5,6 @@
  * @created 01/05/2023
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.security.dto.output;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -22,7 +21,7 @@ import lombok.*;
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-    "jwtToken",
+  "jwtToken",
 })
 public class AuthenticationResponse {
 

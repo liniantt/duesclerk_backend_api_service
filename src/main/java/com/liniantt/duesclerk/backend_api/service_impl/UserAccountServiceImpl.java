@@ -6,7 +6,6 @@
  * @see com.liniantt.duesclerk.backend_api.service.UserAccountService - Service class
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.service_impl;
 
 import com.liniantt.duesclerk.backend_api.service.UserAccountService;
@@ -17,6 +16,4 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @RequiredArgsConstructor
 @Service
-public class UserAccountServiceImpl implements UserAccountService {
-
-}
+public class UserAccountServiceImpl implements UserAccountService {}

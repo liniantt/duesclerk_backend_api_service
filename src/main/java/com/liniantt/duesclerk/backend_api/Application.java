@@ -11,33 +11,28 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @OpenAPIDefinition(
-		info = @Info(
-				title = "DuesClerk",
-				description = "DuesClerk Web and backend API service",
-				version = "1.0.0",
-				termsOfService = "Terms of service will be updated soon.",
-				contact = @Contact(
-						name = "DAVID KARIUKI",
-						email = "dkaris.k@gmail.com"
-				),
-				license = @License(
-						name = "Apache Licence 2.0",
-						url = "https://www.apache.org/licenses/LICENSE-2.0"
-				)
-		),
-		tags = @Tag(
-				name = "DuesClerk",
-				description = "Application to manage dues for personal and business use"
-		),
-		externalDocs = @ExternalDocumentation(
-				url = "https://github.com/liniantt/duesclerk_backend_api_service",
-				description = "Opensource Documentation"
-		)
-)
+    info =
+        @Info(
+            title = "DuesClerk",
+            description = "DuesClerk Web and backend API service",
+            version = "1.0.0",
+            termsOfService = "Terms of service will be updated soon.",
+            contact = @Contact(name = "DAVID KARIUKI", email = "dkaris.k@gmail.com"),
+            license =
+                @License(
+                    name = "Apache Licence 2.0",
+                    url = "https://www.apache.org/licenses/LICENSE-2.0")),
+    tags =
+        @Tag(
+            name = "DuesClerk",
+            description = "Application to manage dues for personal and business use"),
+    externalDocs =
+        @ExternalDocumentation(
+            url = "https://github.com/liniantt/duesclerk_backend_api_service",
+            description = "Opensource Documentation"))
 public class Application {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
-
+  public static void main(String[] args) {
+    SpringApplication.run(Application.class, args);
+  }
 }
