@@ -136,6 +136,13 @@ Fluent assertions for java</a>
         <a href="https://www.h2database.com/html/main.html">H2 Database Engine</a>
     </td>
   </tr>
+  <tr>
+    <td>6. Build management </td>
+    <th>Gradle</th>
+    <td>
+        <a href = "https://gradle.org/">Gradle Build Tool</a>
+    </td>
+  </tr>
   <tr><td></td></tr>
 </table>
 
