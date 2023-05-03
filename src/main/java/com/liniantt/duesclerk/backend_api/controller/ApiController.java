@@ -36,11 +36,11 @@ public class ApiController {
         @ApiResponse(
             description = "API endpoint is reachable",
             responseCode = "200",
-            content = @Content(mediaType = "application/son")),
+            content = @Content(mediaType = "application/json")),
         @ApiResponse(
             description = "API endpoint is not reachable",
             responseCode = "400",
-            content = @Content(mediaType = "application/son"))
+            content = @Content(mediaType = "application/json"))
       })
   public ResponseEntity<?> ping() {
     return ResponseEntity.ok(
