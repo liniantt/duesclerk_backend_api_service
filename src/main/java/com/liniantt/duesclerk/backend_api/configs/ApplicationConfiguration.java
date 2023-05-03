@@ -5,7 +5,6 @@
  * @created 01/05/2023
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.configs;
 
 import com.liniantt.duesclerk.backend_api.security.repository.UserAuthenticationRepository;
@@ -35,10 +34,11 @@ public class ApplicationConfiguration {
    */
   @Bean
   public UserDetailsService userDetailsService() throws UsernameNotFoundException {
-    return username -> userAuthenticationRepository.findByUsername(username)
-        .orElseThrow(
-            () -> new UsernameNotFoundException("User not found with username : " + username)
-        );
+    return username ->
+        userAuthenticationRepository
+            .findByUsername(username)
+            .orElseThrow(
+                () -> new UsernameNotFoundException("User not found with username : " + username));
   }
 
   /**
@@ -56,7 +56,8 @@ public class ApplicationConfiguration {
     // from the in-memory database, LDAP etc.
     daoAuthenticationProvider.setUserDetailsService(userDetailsService());
 
-    daoAuthenticationProvider.setPasswordEncoder(passwordEncoder()); // Set password encoder to be used
+    daoAuthenticationProvider.setPasswordEncoder(
+        passwordEncoder()); // Set password encoder to be used
 
     return daoAuthenticationProvider;
   }
@@ -68,10 +69,10 @@ public class ApplicationConfiguration {
    * @throws Exception - exception
    */
   @Bean
-  public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+  public AuthenticationManager authenticationManager(
+      AuthenticationConfiguration authenticationConfiguration) throws Exception {
     return authenticationConfiguration.getAuthenticationManager();
   }
-
 
   /**
    * Bean for password encoding with BCryptPasswordEncoder

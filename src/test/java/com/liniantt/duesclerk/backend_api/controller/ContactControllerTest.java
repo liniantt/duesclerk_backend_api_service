@@ -3,10 +3,10 @@
  * @author David Kariuki
  * @version 1.0.0
  * @created 29/04/2023
- * @see com.liniantt.duesclerk.backend_api.controller.ContactController - Controller class for testing
+ * @see com.liniantt.duesclerk.backend_api.controller.ContactController - Controller class for
+ *     testing
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.controller;
 
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -27,6 +27,5 @@ import org.springframework.test.web.servlet.MockMvc;
 @ExtendWith(SpringExtension.class)
 public class ContactControllerTest {
 
-  @Autowired
-  private MockMvc mockMvc;
+  @Autowired private MockMvc mockMvc;
 }

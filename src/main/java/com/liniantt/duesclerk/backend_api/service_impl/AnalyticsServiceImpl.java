@@ -6,7 +6,6 @@
  * @see com.liniantt.duesclerk.backend_api.service.AnalyticsService - Service class
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.service_impl;
 
 import com.liniantt.duesclerk.backend_api.service.AnalyticsService;
@@ -17,5 +16,4 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @RequiredArgsConstructor
 @Service
-public class AnalyticsServiceImpl implements AnalyticsService {
-}
+public class AnalyticsServiceImpl implements AnalyticsService {}

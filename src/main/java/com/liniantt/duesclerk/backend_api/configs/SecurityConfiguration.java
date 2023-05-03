@@ -6,7 +6,6 @@
  * @see
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.configs;
 
 import com.liniantt.duesclerk.backend_api.security.authentication_filter.JwtAuthenticationFilter;
@@ -53,8 +52,7 @@ public class SecurityConfiguration {
 
         // Use JWT before UsernamePasswordAuthenticationFilter to check for all
         // requirements and update
-        .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
-    ;
+        .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
 
     return httpSecurity.build();
   }

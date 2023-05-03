@@ -5,41 +5,35 @@
  * @since 1.0.0
  * @created 01/05/2023
  */
-
 package com.liniantt.duesclerk.backend_api.security.dto.input;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import java.io.Serializable;
+import java.util.Objects;
+import javax.annotation.Generated;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-
-import javax.annotation.Generated;
-import java.io.Serializable;
-import java.util.Objects;
 
 @Builder
 @Getter
 @Setter
 @ToString
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({
-    "username",
-    "password"
-})
+@JsonPropertyOrder({"username", "password"})
 @Generated("jsonschema2pojo")
 public class AuthenticationRequest implements Serializable {
 
-  private final static long serialVersionUID = 2916126885284138846L;
+  private static final long serialVersionUID = 2916126885284138846L;
 
   @JsonProperty("username")
   public String username;
 
   @JsonProperty("password")
   public String password;
-
 
   @Override
   public boolean equals(Object o) {
@@ -57,7 +51,10 @@ public class AuthenticationRequest implements Serializable {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append(AuthenticationRequest.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+    sb.append(AuthenticationRequest.class.getName())
+        .append('@')
+        .append(Integer.toHexString(System.identityHashCode(this)))
+        .append('[');
     sb.append("username");
     sb.append('=');
     sb.append(((this.username == null) ? "<null>" : this.username));
@@ -73,5 +70,4 @@ public class AuthenticationRequest implements Serializable {
     }
     return sb.toString();
   }
-
 }

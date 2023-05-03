@@ -6,7 +6,6 @@
  * @see com.liniantt.duesclerk.backend_api.service.AnalyticsServiceTest - Service class for testing
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.service;
 
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -15,5 +14,4 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-public class AnalyticsServiceTest {
-}
+public class AnalyticsServiceTest {}

@@ -5,7 +5,6 @@
  * @created 01/05/2023
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.exception;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -31,19 +30,28 @@ public class GlobalControllerExceptionHandler {
    * @return a ResponseEntity with a String response and HTTP status code 400 (Bad Request)
    */
   @Operation(summary = "Handle ConversionFailedException")
-  @ApiResponses(value = {
-      @ApiResponse(responseCode = "400", description = "Bad request", content = {
-          @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
-      }),
-      @ApiResponse(responseCode = "500", description = "Internal server error", content = {
-          @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))
+  @ApiResponses(
+      value = {
+        @ApiResponse(
+            responseCode = "400",
+            description = "Bad request",
+            content = {
+              @Content(
+                  mediaType = "application/json",
+                  schema = @Schema(implementation = ErrorResponse.class))
+            }),
+        @ApiResponse(
+            responseCode = "500",
+            description = "Internal server error",
+            content = {
+              @Content(
+                  mediaType = "application/json",
+                  schema = @Schema(implementation = ErrorResponse.class))
+            })
       })
-  })
   @ExceptionHandler(ConversionFailedException.class)
   @ResponseStatus(HttpStatus.BAD_REQUEST)
-  public ResponseEntity<String> handleConversion(
-      RuntimeException runtimeException) {
+  public ResponseEntity<String> handleConversion(RuntimeException runtimeException) {
     return new ResponseEntity<>(runtimeException.getMessage(), HttpStatus.BAD_REQUEST);
   }
-
 }

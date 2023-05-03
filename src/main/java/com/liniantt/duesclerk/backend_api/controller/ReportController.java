@@ -6,12 +6,9 @@
  * @see com.liniantt.duesclerk.backend_api.service.ReportService - Controller class
  * @since 1.0.0
  */
-
 package com.liniantt.duesclerk.backend_api.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ReportController {
-
-}
+public class ReportController {}
