@@ -7,6 +7,10 @@
  */
 package com.liniantt.duesclerk.backend_api.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import java.time.LocalDateTime;
 import java.util.Map;
 import org.springframework.http.HttpStatus;
@@ -21,11 +25,23 @@ import org.springframework.web.bind.annotation.RestController;
 public class ApiController {
 
   /**
-   * Method to receive ping calls to API
+   * Method to receive ping calls without authentication
    *
    * @return ResponseEntity<?> - Response
    */
   @GetMapping(path = "/health", produces = MediaType.APPLICATION_JSON_VALUE)
+  @Operation(summary = "Receive ping call for test")
+  @ApiResponses(
+      value = {
+        @ApiResponse(
+            description = "API endpoint is reachable",
+            responseCode = "200",
+            content = @Content(mediaType = "application/son")),
+        @ApiResponse(
+            description = "API endpoint is not reachable",
+            responseCode = "400",
+            content = @Content(mediaType = "application/son"))
+      })
   public ResponseEntity<?> ping() {
     return ResponseEntity.ok(
         Map.of(
