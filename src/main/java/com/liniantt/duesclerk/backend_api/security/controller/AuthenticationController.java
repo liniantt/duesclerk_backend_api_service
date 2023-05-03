@@ -49,12 +49,12 @@ public class AuthenticationController {
           responseCode = "200", description = "Authentication successful",
           content = {@Content(mediaType = "application/json", schema = @Schema(implementation = AuthUser.class))}
       ),
-      @ApiResponse(responseCode = "400", description = "Invalid inputs supplied", content = @Content),
-      @ApiResponse(responseCode = "404", description = "Incorrect user details", content = @Content)
+      @ApiResponse(responseCode = "400", description = "Invalid inputs supplied", content = @Content(mediaType = "application/json")),
+      @ApiResponse(responseCode = "404", description = "Incorrect user details", content = @Content(mediaType = "application/json"))
   })
   @PostMapping(path = "/register", produces = MediaType.APPLICATION_JSON_VALUE)
   public ResponseEntity<AuthenticationResponse> register(
-      @Parameter(description = "Registration request body.", required = true)
+      @Parameter(description = "Registration request body", required = true)
       @RequestBody @Valid AuthRegistrationRequest authRegistrationRequest
   ) {
 
