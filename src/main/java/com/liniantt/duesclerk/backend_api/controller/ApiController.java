@@ -29,7 +29,7 @@ public class ApiController {
    *
    * @return ResponseEntity<?> - Response
    */
-  @GetMapping(path = "/health", produces = MediaType.APPLICATION_JSON_VALUE)
+  @GetMapping(path = "/ping", produces = MediaType.APPLICATION_JSON_VALUE)
   @Operation(summary = "Receive ping call for test")
   @ApiResponses(
       value = {
