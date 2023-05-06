@@ -18,22 +18,22 @@ public class UserRoleEnumConverter implements AttributeConverter<UserRole, Strin
   /**
    * Method to convert entity attribute to database column
    *
-   * @param userRole - Enum class to be converted
+   * @param attribute - Enum class to be converted
    * @return Character - short name
    */
   @Override
-  public String convertToDatabaseColumn(UserRole userRole) {
-    return userRole.getUserRole();
+  public String convertToDatabaseColumn(UserRole attribute) {
+    return attribute.getUserRole();
   }
 
   /**
    * Method to convert from database column to entity attribute
    *
-   * @param userRole - Character from the database column to be converted
+   * @param dbData - Character from the database column to be converted
    * @return UserRole - Enum class
    */
   @Override
-  public UserRole convertToEntityAttribute(String userRole) {
-    return UserRole.fromShortName(userRole);
+  public UserRole convertToEntityAttribute(String dbData) {
+    return UserRole.fromShortName(dbData);
   }
 }

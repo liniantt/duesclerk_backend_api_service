@@ -31,7 +31,7 @@ public enum UserRole {
     return switch (user) {
       case "USER" -> UserRole.ORDINARY_USER;
       case "ADMIN" -> UserRole.ADMINISTRATOR;
-      default -> throw new IllegalArgumentException("Invalid user role : " + user + "!");
+      default -> throw new IllegalArgumentException("Unknown user role : " + user);
     };
   }
 }
