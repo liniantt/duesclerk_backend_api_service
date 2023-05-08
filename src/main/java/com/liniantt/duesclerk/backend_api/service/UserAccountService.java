@@ -8,7 +8,19 @@
  */
 package com.liniantt.duesclerk.backend_api.service;
 
+import com.liniantt.duesclerk.backend_api.dto.input.RegisterUserRequestBody;
+import com.liniantt.duesclerk.backend_api.dto.output.UserRegistrationResponse;
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Service;
 
 @Service
-public interface UserAccountService {}
+public interface UserAccountService {
+
+  /**
+   * Method to register user
+   *
+   * @param registerUserRequestBody - Request body
+   * @return RegisterUserResponse
+   */
+  UserRegistrationResponse registerUser(@Valid RegisterUserRequestBody registerUserRequestBody);
+}
