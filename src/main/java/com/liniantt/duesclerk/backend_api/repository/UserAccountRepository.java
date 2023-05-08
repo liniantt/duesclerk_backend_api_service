@@ -8,7 +8,9 @@
  */
 package com.liniantt.duesclerk.backend_api.repository;
 
+import com.liniantt.duesclerk.backend_api.domain.entity.UserAccount;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserAccountRepository {}
+public interface UserAccountRepository extends JpaRepository<UserAccount, String> {}
