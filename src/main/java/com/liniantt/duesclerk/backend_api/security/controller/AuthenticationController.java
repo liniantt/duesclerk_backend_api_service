@@ -15,10 +15,12 @@ import com.liniantt.duesclerk.backend_api.security.entity.AuthUser;
 import com.liniantt.duesclerk.backend_api.security.service.AuthenticationService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
@@ -29,6 +31,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@SecurityScheme(
+    name = "bearerAuth",
+    type = SecuritySchemeType.HTTP,
+    scheme = "bearer",
+    bearerFormat = "JWT")
 @RequiredArgsConstructor
 @RequestMapping(path = "/api/v1/auth")
 public class AuthenticationController {
@@ -49,17 +56,17 @@ public class AuthenticationController {
             description = "Authentication successful",
             content = {
               @Content(
-                  mediaType = "application/json",
+                  mediaType = MediaType.APPLICATION_JSON_VALUE,
                   schema = @Schema(implementation = AuthUser.class))
             }),
         @ApiResponse(
             responseCode = "400",
             description = "Invalid inputs supplied",
-            content = @Content(mediaType = "application/json")),
+            content = @Content(mediaType = MediaType.APPLICATION_JSON_VALUE)),
         @ApiResponse(
             responseCode = "404",
             description = "Incorrect user details",
-            content = @Content(mediaType = "application/json"))
+            content = @Content(mediaType = MediaType.APPLICATION_JSON_VALUE))
       })
   @PostMapping(path = "/register", produces = MediaType.APPLICATION_JSON_VALUE)
   public ResponseEntity<AuthenticationResponse> register(
@@ -84,7 +91,7 @@ public class AuthenticationController {
             description = "Authentication successful",
             content = {
               @Content(
-                  mediaType = "application/json",
+                  mediaType = MediaType.APPLICATION_JSON_VALUE,
                   schema = @Schema(implementation = AuthenticationResponse.class))
             }),
         @ApiResponse(

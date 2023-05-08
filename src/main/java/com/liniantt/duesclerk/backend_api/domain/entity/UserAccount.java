@@ -1,5 +1,5 @@
 /**
- * @apiNote class
+ * @apiNote UserAccount entity class
  * @author David Kariuki
  * @version 1.0.0
  * @created 06/05/2023
@@ -37,7 +37,7 @@ public class UserAccount {
   @Column(name = "password", nullable = false, length = 300)
   String password;
 
-  @Column(name = "accountType", nullable = false, length = 1, columnDefinition = "CHAR(1)")
+  @Column(name = "account_type", nullable = false, length = 1, columnDefinition = "CHAR(1)")
   AccountType accountType;
 
   @Column(name = "created_at_timestamp", nullable = false, length = 50)
@@ -50,10 +50,10 @@ public class UserAccount {
       name = "email_address_verified",
       nullable = false,
       length = 5,
-      columnDefinition = "boolean default false")
+      columnDefinition = "boolean default")
   Boolean emailAddressVerified;
 
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "sequence", nullable = false)
-  Integer sequence;
+  Long sequence;
 }

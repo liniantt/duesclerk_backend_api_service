@@ -9,9 +9,11 @@
 package com.liniantt.duesclerk.backend_api.security.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import java.util.Map;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -22,6 +24,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@SecurityScheme(
+    name = "bearerAuth",
+    type = SecuritySchemeType.HTTP,
+    scheme = "bearer",
+    bearerFormat = "JWT")
 @RequestMapping("/api/v1/auth")
 @RequiredArgsConstructor
 public class AuthTestController {
@@ -37,11 +44,11 @@ public class AuthTestController {
         @ApiResponse(
             responseCode = "200",
             description = "Authentication successful",
-            content = {@Content(mediaType = "application/json")}),
+            content = {@Content(mediaType = MediaType.APPLICATION_JSON_VALUE)}),
         @ApiResponse(
             responseCode = "403",
             description = "Forbidden",
-            content = {@Content(mediaType = "application/json")})
+            content = {@Content(mediaType = MediaType.APPLICATION_JSON_VALUE)})
       })
   @GetMapping(path = "/test", produces = MediaType.APPLICATION_JSON_VALUE)
   public ResponseEntity<?> testAuthentication() {
