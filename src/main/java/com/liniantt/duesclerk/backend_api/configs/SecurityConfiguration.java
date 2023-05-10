@@ -36,7 +36,9 @@ public class SecurityConfiguration {
         .authorizeHttpRequests()
 
         // Permit requests below without authentication
-        .requestMatchers(HttpMethod.POST, "/api/v1/auth/**")
+        .requestMatchers(HttpMethod.POST, "/api/v1/auth/register")
+        .permitAll()
+        .requestMatchers(HttpMethod.POST, "/api/v1/auth/authenticate")
         .permitAll()
 
         // Authenticate the rest below
