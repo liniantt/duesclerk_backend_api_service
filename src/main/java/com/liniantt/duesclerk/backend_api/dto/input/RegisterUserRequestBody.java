@@ -23,16 +23,7 @@ import lombok.*;
 @AllArgsConstructor
 @RequiredArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({
-  "fullName",
-  "emailAddress",
-  "countryId",
-  "password",
-  "accountType",
-  "createdAtTimestamp",
-  "updatedAtTimestamp",
-  "emailAddressVerified"
-})
+@JsonPropertyOrder({"fullName", "emailAddress", "countryId", "password", "accountType"})
 @Generated("jsonschema2pojo")
 public class RegisterUserRequestBody implements Serializable {
 
@@ -52,15 +43,6 @@ public class RegisterUserRequestBody implements Serializable {
 
   @JsonProperty("accountType")
   private String accountType;
-
-  @JsonProperty("createdAtTimestamp")
-  private String createdAtTimestamp;
-
-  @JsonProperty("updatedAtTimestamp")
-  private String updatedAtTimestamp;
-
-  @JsonProperty("emailAddressVerified")
-  private Boolean emailAddressVerified;
 
   @JsonIgnore @Valid
   private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
